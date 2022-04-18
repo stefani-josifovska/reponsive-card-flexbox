@@ -1,0 +1,169 @@
+html {
+    height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(10,12,27);
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 19.2px - 10px);
+}
+
+h1 {
+  color: white;
+  font-size: 2em;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+h1 span {
+  color: rgb(172,99,214);
+}
+
+p {
+  color: #E4D1B9;
+}
+
+a {
+  color: #E4D1B9;
+}
+
+a:visited {
+  color:  rgb(172,99,214);
+}
+
+.glavno {
+  /* margin: 100px auto; */
+  width: 950px;
+  height: 400px;
+  background-color: rgb(28,25,56);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+/*  flex-basis: initial;
+  flex-grow: 1;
+  flex-shrink: 1; */
+  align-self: center;
+  border-radius: 15px;
+}
+
+.levo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+
+  flex-grow: 1;
+  flex-shrink: 1;
+/*
+  min-width: -webkit-min-content;
+  min-height: -webkit-min-content; */
+}
+
+.levo p {
+  padding-bottom: 15%;
+}
+
+.desno {
+  display: flex;
+  width: 120%;
+  height: 100%;
+  border-radius: inherit;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background: linear-gradient( rgba(162, 86, 208, 0.5), rgba(162, 86, 208, 0.5)), url("images/image-header-desktop.jpg");
+  background-size: cover;
+
+  flex-grow: 1;
+  flex-shrink: 1;
+/*  background-image: url("images/image-header-desktop.jpg");
+  overflow: hidden; */
+}
+
+.brojki {
+  color: white;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.tekst-dole div {
+  flex: 1;
+}
+
+.tekst-gore {
+  text-align: left;
+}
+
+.tekst-dole {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #E4D1B9;
+}
+
+@media (max-width: 975px) {
+  .glavno {
+    width: 80vw;
+    height: 75vh;
+    flex-direction: column-reverse;
+    text-align: center;
+    min-height: 300px;
+    min-width: 0;
+  }
+  .tekst-gore {
+    text-align: center;
+  }
+  .desno{
+    border-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: inherit;
+    height: 20%;
+    min-height: 0;
+  }
+  .levo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    min-width: 0;
+  }
+  .levo p {
+    padding-bottom: 0;
+  }
+  .tekst-dole {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .brojki-dole {
+    padding-top: 10%;
+  }
+  .brojki {
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.footer p {
+  margin: 0;
+  padding: 0;
+}
